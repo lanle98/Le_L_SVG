@@ -1,11 +1,265 @@
-.image-wrapper
+body
 {
-	width: 45%;
-	display: inline-block;
+	background: #f4f4f4;
+	
+}
+a:link,a:visited
+{
+	font-family: sans-serif;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+#mainNav li:hover
+{
+	background: #0bdbb6;
+}
+#siteContainer
+{
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 920px;
+	margin:0 auto;
+	background: #e9ffff;
+}
+#mainNav
+{
+	width: 920px;
+	background: #91ffff;
+	padding: 20px 0;
+}
+#mainNav ul
+{
+	
+	display: flex;
+	justify-content: space-around;
+	
+
+}
+#mainNav li
+{
+	list-style-type: none;
+	display: inline;
+	padding: 30px 50px;
+	background: #08a4a7;
+	border-radius: 20px;
+
+}
+button
+{
+	width: 200px;
+	height: 100px;
+	border-radius: 20px;
+	background: 	#0bdbb6;
+	border:none;
+	font-size: 20px;
+	color: white;
+}
+h1
+{
+	font-family: sans-serif;
+	text-align: center;
+	font-size: 60px;
+	color: #08a4a7;
+}
+#mainContainer
+{
+	width: 80%;
+	padding: 50px;
+
 }
 
-img
+.boxes
 {
-	width: 20%;
-	display: block;
+	padding: 20px;
+}
+
+.st1,.st2,.st3,.st4,.st5,.st6,.st7,.st8,.st9,.st10,.st11,.st12,.st13,.st14,.st15,.st16,.st17,.st18,.st19,.st20,.st21,#love,#add,#home,#mail
+{
+	transition:ease 0.3s, transform 0.3s ease;
+	transform-origin: center;
+	 transform-box: fill-box;
+
+}
+
+.upper
+{
+	transition: ease 0.3s;
+	transform-origin: top;
+	 transform-box: fill-box;
+
+}
+
+.lower
+{
+	transition: ease 0.3s;
+	transform-origin: bottom;
+	 transform-box: fill-box;
+}
+
+#mail_1_:hover .upper
+{
+	
+
+	transform: rotateX(50deg);
+}
+
+#mail_1_:hover .lower
+{
+	
+
+	transform: rotateX(-20deg);
+}
+#mail_1_:hover .st4
+{
+	fill: #03f7e5;
+}
+#mail_1_:hover .st5
+{
+	fill: #047a6f;
+}
+
+#search:hover .st1
+{
+	fill: #028ecc;
+}
+#search:hover .st2
+{
+	fill: #047ca5;
+}
+#search:hover .st3
+{
+	transform: rotate(90deg);
+}
+#menu:hover .cls-3
+{
+	fill: black;
+}
+#home_1_:hover #home
+{
+	transform: rotateY(180deg);
+}
+#home_1_:hover .st6
+{
+	fill:#f77f00;
+}
+#home_1_:hover .st7
+{
+	fill:#ba5a02;
+}
+#setting:hover .st3
+{
+	
+	transform: rotate(360deg);
+}
+
+#setting:hover .st20
+{
+	fill: #f9471e;
+}
+#setting:hover .st21
+{
+	fill: #ce3d1b;
+}
+#delete:hover .cls-3
+{
+	fill: black;
+}
+#love:hover .cls-3
+{
+	fill: black;
+}
+#location:hover .cls-3
+{
+	fill: black;
+}
+#add_1_:hover .st3
+{
+
+	transform: rotate(360deg);
+}
+#add_1_:hover .st16
+{
+
+
+	fill: #ed4a7d;
+}
+#add_1_:hover .st17
+{
+
+
+	fill: #c1406f;
+}
+
+#send:hover .cls-3
+{
+	fill: black;
+}
+#love:hover #heart
+{
+	fill: #ff9fb4;
+}
+
+#love:hover .st8
+{
+	fill: #fcd638;
+}
+
+#love:hover .st9
+{
+	fill: #d8b830;
+}
+#send_1_:hover .st3
+{
+	transform: rotateY(180deg);
+}
+#send_1_:hover .st12
+{
+	fill: #06d6a0;
+}
+#send_1_:hover .st13
+{
+	fill: #078e68;
+}
+#location:hover .st10
+{
+	fill: #21c4cc;
+}
+#location:hover .st11
+{
+	fill: #1ca0a0;
+}
+#location:hover .st3
+{	
+	transform: rotateY(360deg); 
+}
+#delete_1_:hover .st18
+{
+	fill: #f90303;
+}
+#delete_1_:hover .st19
+{
+	fill: #b20202;
+}
+
+#delete_1_:hover .lower
+{
+	
+
+	transform: rotateX(-20deg);
+}
+#menu:hover .st14
+{
+	fill: #5ec94f;
+}
+#menu:hover .st15
+{
+	fill: #489b3d;
+}
+#menu:hover .st3
+{	
+	transform: rotateY(360deg); 
 }
