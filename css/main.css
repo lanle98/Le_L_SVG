@@ -1,6 +1,7 @@
 body
 {
-	background: #f4f4f4;
+	background: #ffff;
+	margin-top: 0px;
 	
 }
 a:link,a:visited
@@ -9,10 +10,26 @@ a:link,a:visited
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
+
 }
-#mainNav li:hover
+#mainHeader
 {
-	background: #0bdbb6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: white;
+}
+#logo
+{
+	width: 50%;
+	padding: 20px;
+
+}
+
+a:hover #mainNav li
+{
+	background: #a7d6c0;
 }
 #siteContainer
 {
@@ -23,13 +40,20 @@ a:link,a:visited
 	align-items: center;
 	width: 920px;
 	margin:0 auto;
-	background: #e9ffff;
 }
+.siteContainerBackground
+{
+	background-color: #ededed;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ededed'/%3E%3Cstop offset='1' stop-color='%23b8dade'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23ffffff' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+
 #mainNav
 {
 	width: 920px;
-	background: #91ffff;
-	padding: 20px 0;
+	background: #add8e6;
+	padding: 30px 0;
 }
 #mainNav ul
 {
@@ -44,26 +68,44 @@ a:link,a:visited
 	list-style-type: none;
 	display: inline;
 	padding: 30px 50px;
-	background: #08a4a7;
+	background: #86c5d8;
 	border-radius: 20px;
+	transition: ease 0.3s;
 
 }
+
+#mainNav li:hover
+{
+	background: #42b8d3;
+}
+
 button
 {
+	margin: 20px;
 	width: 200px;
 	height: 100px;
-	border-radius: 20px;
-	background: 	#0bdbb6;
+	border-radius: 10px;
 	border:none;
+	background: #20CE87;
 	font-size: 20px;
 	color: white;
+	transition: ease 0.3s;
+}
+button:hover
+{
+	width: 210px;
+	height: 110px;
+}
+button:active,a:active
+{
+	background: #117049;
 }
 h1
 {
 	font-family: sans-serif;
 	text-align: center;
 	font-size: 60px;
-	color: #08a4a7;
+	color: #42b8d3;
 }
 #mainContainer
 {
@@ -99,6 +141,13 @@ h1
 	transform-origin: bottom;
 	 transform-box: fill-box;
 }
+
+#mail_1_:active
+{
+	position: relative;
+	top: 20px;
+}
+
 
 #mail_1_:hover .upper
 {
@@ -200,17 +249,18 @@ h1
 }
 #love:hover #heart
 {
-	fill: #ff9fb4;
+	transform: rotateY(360deg);
+	fill: white;
 }
 
 #love:hover .st8
 {
-	fill: #fcd638;
+	fill: #ffd939;
 }
 
 #love:hover .st9
 {
-	fill: #d8b830;
+	fill: #ceaf2e;
 }
 #send_1_:hover .st3
 {
