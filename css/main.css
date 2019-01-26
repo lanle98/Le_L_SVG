@@ -7,6 +7,11 @@ background-size: cover;
 	margin-top: 0px;
 	
 }
+
+.hidden
+{
+	display: none;
+}
 a:link,a:visited
 {
 	font-family: sans-serif;
@@ -140,10 +145,10 @@ p
 #description
 {
 	width: 400px;
-	max-height: 50px;
+	max-height: 130px;
 	overflow: hidden;
 	padding: 40px 60px;
-	padding-top: 20px;
+	padding-top: 10px;
 	transition: all ease 1s;
 	transition-timing-function: ease;
 	background: #add8e6;
