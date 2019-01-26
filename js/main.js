@@ -22,5 +22,11 @@ var content = document.getElementById("description");
 
 button.addEventListener("click", showmore);
 
-
+var x = document.querySelector(".button")
+	function myFunction() {
+  		var y = document.getElementById("fileType");
+  		y.classList.remove("showfileType");
+  		console.log(y);
+		};
+x.addEventListener("click",myFunction);
 })();

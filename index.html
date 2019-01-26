@@ -201,14 +201,57 @@
 </div>
 </section>
 <button class="button" id="download" onclick="myFunction()">Download</button>
-
+<div id="fileType" class="hidefileType">
+	<ul>
+		<a href="###">
+			<li>SVG</li>
+		</a>
+		<a href="###">
+			<li>AI</li>
+		</a>
+		<a href="###">
+			<li>PNG</li>
+		</a>
+	</ul>
+	
+</div>
+<footer id="mainFooter">
+</footer>
 
 </div>
 
 
-<script src="js/main.js">
+<script>
 
- // removeShadow.addEventListener("click", myFunction);
+var content = document.getElementById("description");
+	var button = document.getElementById("show-more");
+
+	function showmore(){
+	
+ 		if (content.className == "open")
+ 		{
+ 		console.log(this);
+ 		content.className = "";
+ 		button.innerHTML = "Show More";
+ 		} 
+
+ 		else {
+ 		console.log(this);
+ 		content.className = "open";
+ 		button.innerHTML = "Show Less";
+ 		}
+
+ 		};
+
+button.addEventListener("click", showmore);
+
+var x = document.querySelector(".button")
+	function myFunction() {
+  		var y = document.getElementById("fileType");
+  		y.classList.remove("hidefileType");
+  		console.log(y);
+		};
+x.addEventListener("click",myFunction);
 
 </script>
 </body>

@@ -84,6 +84,7 @@ background-size: cover;
 button
 {
 	margin: 20px;
+	margin-bottom: 0px;
 	width: 200px;
 	height: 100px;
 	border-radius: 10px;
@@ -371,4 +372,31 @@ p
 	top: 20px;
 	display: none;
 
+}
+#fileType ul
+{
+	width: 200px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 10px;
+}
+
+#fileType li
+{
+	list-style-type: none;
+	display: inline;
+}
+
+.hidefileType
+{
+	display: none;
+}
+
+#mainFooter
+{
+	margin-top: 40px;
+	width: 920px;
+	height: 80px;
+	background: #add8e6;
 }
